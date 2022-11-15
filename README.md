@@ -14,6 +14,6 @@
 #### Wireframe of main game screen 
     basic design: have a 10x10 grid in the center title ontop and a reset button
 
-![alt text](https://www.figma.com/file/QnCJu5vIvyGKYwOKnYZ5SN/Untitled?node-id=0%3A1&t=Ta8LeGP9hFLRmSNw-0)
+![alt text](/images/Untitled.png "wireframe")
 
 
