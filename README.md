@@ -1,3 +1,3 @@
-# battleship_project1 
+# Minesweeper_project1 
 
 
