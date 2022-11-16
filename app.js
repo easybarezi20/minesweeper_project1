@@ -12,6 +12,12 @@ let squares = []
         const emptyArray = Array(width*width - bombAmount).fill('safe')
         console.log(bombArray)
         console.log(emptyArray)
+        //joining the two bomb and safe arrays into one
+        const gameArray = emptyArray.concat(bombArray)
+        console.log(gameArray)
+        //creating gae board array with sorted value everytime 
+        const sortedGameArray = gameArray.sort(() => Math.random() - 0.5)
+        console.log(sortedGameArray)
 
         //creates the grid baord while also storing each div into an array
         for (let i = 0; i < width * width; i++) {
@@ -23,4 +29,4 @@ let squares = []
     }
     createBoard()
 
-    console.log(squares)
+    
