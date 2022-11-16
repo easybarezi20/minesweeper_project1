@@ -16,13 +16,14 @@ let squares = []
         const gameArray = emptyArray.concat(bombArray)
         console.log(gameArray)
         //creating gae board array with sorted value everytime 
-        const sortedGameArray = gameArray.sort(() => Math.random() - 0.5)
-        console.log(sortedGameArray)
+        const shuffledArray = gameArray.sort(() => Math.random() - 0.5)
+        console.log(shuffledArray)
 
         //creates the grid baord while also storing each div into an array
         for (let i = 0; i < width * width; i++) {
             const square = document.createElement('div')
             square.setAttribute('id', i)
+            square.classList.add(shuffledArray[i])
             grid.appendChild(square)
             squares.push(square)
         }
