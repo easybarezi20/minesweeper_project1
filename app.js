@@ -28,20 +28,19 @@ let squares = []
         }
         // function to figure out how to add a number to the square. 
         // will be reasigning a nwe type to the divs with the total number of bombs around them.
-
+        for (let i = 0; i < 100; i++){
+            
+        }
 
     }
     createBoard()
-    // function automateClick() {
-    //     for (let i = 0; i < 100; i++){
+
             const safeBtn = document.querySelectorAll(".safe")
             const bombBtn = document.querySelectorAll(".bomb") 
             console.log(safeBtn)
             safeBtn.forEach( cell => { cell.addEventListener('click', () => {console.log('safe')})})
             bombBtn.forEach( cell => { cell.addEventListener('click', () => {console.log('bomb')})})
-    //     }
-    // }
-    // automateClick()
+
 
 
    //automate event listener 
