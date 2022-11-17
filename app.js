@@ -38,7 +38,8 @@ let squares = []
             if (squares[i].classList.contains('safe')){
                 if(!isLeftEdge && i > 0 && squares[i - 1].classList.contains('bomb')) totalBombs++;
                 if(!isRigthEdge && i > 0 && squares[i + 1].classList.contains('bomb')) totalBombs++;
-                
+                if (i < 90 && squares[i + 10].classList.contains('bomb')) totalBombs++;
+                if(i > 9 && squares[i - 10].classList.contains('bomb')) totalBombs++;
                 squares[i].setAttribute('data', totalBombs)
             }
             
