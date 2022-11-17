@@ -14,6 +14,8 @@
         - play around with using the data attribute to display the number of bombs around the square
         - using the data attribute to set how many bombs are around a safe space we can innerHTML the 
             safe space to display the data number
+            -case: if the squere is on the left or rigth edge it will default to checking the row above squre
+                or the row below squere since my grid has a property of wrap.
     4.if you hit a mine have the game be over 
         -flag feature if you think bomb is on the square
     5.win when you uncover all squeres without hitting a mine

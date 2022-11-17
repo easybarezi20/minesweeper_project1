@@ -29,7 +29,9 @@ let squares = []
         // function to figure out how to add a number to the square. 
         // will be reasigning a nwe type to the divs with the total number of bombs around them.
         for (let i = 0; i < 100; i++){
-            
+            //dont wan the sqaure if its to the very rigth or left to count the square that it wraps to.
+            const isLeftEdge = ''
+            const isRigthEdge = ''
         }
 
     }
