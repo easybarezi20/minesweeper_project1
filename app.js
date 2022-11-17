@@ -28,10 +28,20 @@ let squares = []
         }
         // function to figure out how to add a number to the square. 
         // will be reasigning a nwe type to the divs with the total number of bombs around them.
-        for (let i = 0; i < 100; i++){
+        for (let i = 0; i < squares.length; i++){
+            let totalBombs = 0
             //dont wan the sqaure if its to the very rigth or left to count the square that it wraps to.
-            const isLeftEdge = ''
-            const isRigthEdge = ''
+            // this one checks if the number is divisble by ten 
+            const isLeftEdge = i % 10 === 0
+            // this ome checks if the number leaves a remainder of 9 meaning its on the right edge
+            const isRigthEdge = i % 10 === 9
+            if (squares[i].classList.contains('safe')){
+                if(!isLeftEdge && i > 0 && squares[i - 1].classList.contains('bomb')) totalBombs++;
+                if(!isRigthEdge && i > 0 && squares[i + 1].classList.contains('bomb')) totalBombs++;
+                
+                squares[i].setAttribute('data', totalBombs)
+            }
+            
         }
 
     }
