@@ -68,7 +68,7 @@ const safeBtn = document.querySelectorAll(".safe")
 safeBtn.forEach(cell => {
     cell.addEventListener('click', () => {
         cell.innerHTML = cell.getAttribute('data')
-        cell.style.backgroundColor = 'white';
+        cell.style.backgroundImage = "url('https://static.planetminecraft.com/files/resource_media/screenshot/1236/pack_3530346.jpg')";
     })
 })
 
