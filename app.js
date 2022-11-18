@@ -45,10 +45,14 @@ function createBoard() {
             if (i < 90 && squares[i + 10].classList.contains('bomb')) totalBombs++;
             //top
             if (i > 9 && squares[i - 10].classList.contains('bomb')) totalBombs++;
-            //top left
-            if (!isLeftEdge && i >= 11 && i <= 88 && !isRigthEdge && squares[i - 11].classList.contains('bomb')) totalBombs++;
-            //top right
-            if (!isLeftEdge && i >= 11 && i <= 88 && !isRigthEdge && squares[i - 9].classList.contains('bomb')) totalBombs++;
+            //top left except 0-9
+            if (!isLeftEdge && i >= 11 && squares[i - 11].classList.contains('bomb')) totalBombs++;
+            //top right except 0-9
+            if (i >= 10 && i < 99 && !isRigthEdge && squares[i - 9].classList.contains('bomb')) totalBombs++;
+            //bottom left except outer edge
+
+            //bottom rigth except outer edge
+            
             squares[i].setAttribute('data', totalBombs)
 
         }
