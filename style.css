@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     background-image: url('https://www.filterforge.com/filters/11635-v7.jpg');
+   
     
 }
 
@@ -29,3 +30,8 @@ body{
     
 }
 
+h1{
+    font-family: 'Minecraft', sans-serif;
+    color: black;
+    text-align: center;
+}
