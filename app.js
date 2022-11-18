@@ -69,6 +69,7 @@ safeBtn.forEach(cell => {
     cell.addEventListener('click', () => {
         cell.innerHTML = cell.getAttribute('data')
         cell.style.backgroundImage = "url('https://static.planetminecraft.com/files/resource_media/screenshot/1236/pack_3530346.jpg')";
+        cell.style.backgroundSize = '40px 40px'
     })
 })
 
@@ -77,8 +78,10 @@ const bombBtn = document.querySelectorAll('.bomb')
 bombBtn.forEach(cell => {
     cell.addEventListener('click', () => {
         cell.innerHTML = '&#128163'
-        cell.style.backgroundColor = 'red'
-        window.location.reload();
+        cell.style.backgroundSize = '40px 40px'
+        cell.style.backgroundImage = "url('https://art.pixilart.com/6708727607ef2f6.png')"
+
+        // window.location.reload();
     })
 })
 

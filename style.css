@@ -21,6 +21,8 @@ body{
     border: 1pxdcf;
     text-align: center;
     border: 1px solid black;
+    color: white;
+    
 }
 .bomb{
     background-image: url('https://www.filterforge.com/filters/11635-v7.jpg');
