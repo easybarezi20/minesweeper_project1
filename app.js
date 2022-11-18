@@ -50,9 +50,9 @@ function createBoard() {
             //top right except 0-9
             if (i >= 10 && i < 99 && !isRigthEdge && squares[i - 9].classList.contains('bomb')) totalBombs++;
             //bottom left except outer edge
-
+            if (!isLeftEdge && i <= 89 && squares[i + 9].classList.contains('bomb')) totalBombs++;
             //bottom rigth except outer edge
-            
+            if (!isRigthEdge && i < 89 && squares[i + 11].classList.contains('bomb')) totalBombs++;
             squares[i].setAttribute('data', totalBombs)
 
         }
