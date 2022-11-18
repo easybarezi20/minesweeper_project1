@@ -5,13 +5,19 @@
     width: 420px;
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
     background-image: url('https://www.filterforge.com/filters/11635-v7.jpg');
-   
+    
     
 }
 
-body{
-    background-color: greenyellow;
+body, html{
+    background-image: url('https://altura.aurorak12.org/wp-content/uploads/sites/14/2016/08/HD-Blue-Sky-Wallpaper-1024x648.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 
@@ -19,19 +25,18 @@ body{
 .grid div {
     height: 40px;
     width: 40px;
-    border: 1pxdcf;
     text-align: center;
     border: 1px solid black;
     color: white;
     
+    
 }
 .bomb{
     background-image: url('https://www.filterforge.com/filters/11635-v7.jpg');
-    
 }
 
 h1{
     font-family: 'Minecraft', sans-serif;
-    color: black;
+    color: rgb(82, 80, 80);
     text-align: center;
 }
