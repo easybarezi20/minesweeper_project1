@@ -1,6 +1,7 @@
 
 const grid = document.querySelector('.grid')
-const safeSquares = document.querySelectorAll('.safe')
+const safeBtn = document.querySelectorAll(".safe")
+const bombBtn = document.querySelectorAll(".bomb")
 let bombAmount = 20
 let squares = []
 
@@ -10,14 +11,14 @@ function createBoard() {
     //creates two arrays one with 20 bombs and one with 80 safe spaces
     const bombArray = Array(bombAmount).fill('bomb')
     const emptyArray = Array(100 - bombAmount).fill('safe')
-    console.log(bombArray)
-    console.log(emptyArray)
+    // console.log(bombArray)
+    // console.log(emptyArray)
     //joining the two bomb and safe arrays into one
     const gameArray = emptyArray.concat(bombArray)
-    console.log(gameArray)
+    // console.log(gameArray)
     //creating gae board array with sorted value everytime 
     const shuffledArray = gameArray.sort(() => Math.random() - 0.5)
-    console.log(shuffledArray)
+    // console.log(shuffledArray)
 
     //creates the grid baord while also storing each div into an array
     for (let i = 0; i < 100; i++) {
@@ -54,6 +55,11 @@ function createBoard() {
             //bottom rigth except outer edge
             if (!isRigthEdge && i < 89 && squares[i + 11].classList.contains('bomb')) totalBombs++;
             squares[i].setAttribute('data', totalBombs)
+            const safeSquares = document.querySelectorAll('.safe')
+            console.log(safeSquares)
+            squares[i].textContent = squares[i].getAttribute('data')
+            
+
 
         }
 
@@ -62,10 +68,11 @@ function createBoard() {
 }
 createBoard()
 
-const safeBtn = document.querySelectorAll(".safe")
-const bombBtn = document.querySelectorAll(".bomb")
-console.log(safeBtn)
-safeBtn.forEach(cell => { cell.addEventListener('click', () => { console.log('safe') }) })
+
+// console.log(safeBtn)
+safeBtn.forEach(cell => { cell.addEventListener('click', () => { 
+    safeSquares.appendChild('p', totalBombs)
+}) })
 bombBtn.forEach(cell => { cell.addEventListener('click', () => { console.log('bomb') }) })
 
 
