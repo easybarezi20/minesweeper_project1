@@ -1,6 +1,6 @@
 
 const grid = document.querySelector('.grid')
-const bombBtn = document.querySelectorAll(".bomb")
+
 let bombAmount = 20
 let squares = []
 
@@ -64,19 +64,16 @@ function createBoard() {
 createBoard()
 // const safeSquares = document.querySelectorAll('.safe')
 
-
-
-bombBtn.forEach(cell => { cell.addEventListener('click', () => { console.log('bomb') }) })
 const safeBtn = document.querySelectorAll(".safe")
-// const safeSquares = querySelectorAll('.safe')
+// console.log(squares)
 safeBtn.forEach( cell => { 
     cell.addEventListener('click', () => {
             cell.innerHTML = cell.getAttribute('data')
-            
-        
-    })
-   
+            cell.style.backgroundColor = 'white';
+    }) 
 })
+
+const bombBtn = document.querySelectorAll('.bomb')
 
 
 

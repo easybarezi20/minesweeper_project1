@@ -1,3 +1,5 @@
+
+
 .grid {
     height: 400px;
     width: 400px;
@@ -6,11 +8,19 @@
     background-color: grey;
 }
 
+body{
+    background-color: greenyellow;
+}
+
+
+
 .grid div {
     height: 40px;
     width: 40px;
     border: 1pxdcf;
+    text-align: center;
 }
 .bomb{
     background-color: orangered;
 }
+
