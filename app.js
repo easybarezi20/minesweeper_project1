@@ -18,7 +18,7 @@ function createBoard() {
     //creating gae board array with sorted value everytime 
     const shuffledArray = gameArray.sort(() => Math.random() - 0.5)
     console.log(shuffledArray)
-    
+
     //creates the grid baord while also storing each div into an array
     for (let i = 0; i < 100; i++) {
         const square = document.createElement('div')
@@ -53,29 +53,35 @@ function createBoard() {
             if (!isLeftEdge && i <= 89 && squares[i + 9].classList.contains('bomb')) totalBombs++;
             //bottom rigth except outer edge
             if (!isRigthEdge && i < 89 && squares[i + 11].classList.contains('bomb')) totalBombs++;
-            
+
             squares[i].setAttribute('data', totalBombs)
             // squares[i].textContent = squares[i].getAttribute('data')
         }
-        
+
     }
-    
+
 }
 createBoard()
 // const safeSquares = document.querySelectorAll('.safe')
 
 const safeBtn = document.querySelectorAll(".safe")
 // console.log(squares)
-safeBtn.forEach( cell => { 
+safeBtn.forEach(cell => {
     cell.addEventListener('click', () => {
-            cell.innerHTML = cell.getAttribute('data')
-            cell.style.backgroundColor = 'white';
-    }) 
+        cell.innerHTML = cell.getAttribute('data')
+        cell.style.backgroundColor = 'white';
+    })
 })
 
 const bombBtn = document.querySelectorAll('.bomb')
 
+bombBtn.forEach(cell => {
+    cell.addEventListener('click', () => {
+        cell.innerHTML = '&#128163'
+        cell.style.backgroundColor = 'red'
+        window.location.reload();
+    })
+})
 
 
 
- 
