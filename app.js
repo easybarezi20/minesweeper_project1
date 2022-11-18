@@ -10,14 +10,13 @@ function createBoard() {
     //creates two arrays one with 20 bombs and one with 80 safe spaces
     const bombArray = Array(bombAmount).fill('bomb')
     const emptyArray = Array(100 - bombAmount).fill('safe')
-    console.log(bombArray)
-    console.log(emptyArray)
+   
     //joining the two bomb and safe arrays into one
     const gameArray = emptyArray.concat(bombArray)
-    console.log(gameArray)
+ 
     //creating gae board array with sorted value everytime 
     const shuffledArray = gameArray.sort(() => Math.random() - 0.5)
-    console.log(shuffledArray)
+ 
 
     //creates the grid baord while also storing each div into an array
     for (let i = 0; i < 100; i++) {
@@ -55,17 +54,17 @@ function createBoard() {
             if (!isRigthEdge && i < 89 && squares[i + 11].classList.contains('bomb')) totalBombs++;
 
             squares[i].setAttribute('data', totalBombs)
-            // squares[i].textContent = squares[i].getAttribute('data')
+            
         }
 
     }
 
 }
 createBoard()
-// const safeSquares = document.querySelectorAll('.safe')
+
 
 const safeBtn = document.querySelectorAll(".safe")
-// console.log(squares)
+
 safeBtn.forEach(cell => {
     cell.addEventListener('click', () => {
         cell.innerHTML = cell.getAttribute('data')
