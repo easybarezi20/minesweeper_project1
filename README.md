@@ -1,7 +1,7 @@
 # Minesweeper_project1 
 
 ## Choice of game:
-    minesweeper 
+    MineSweeper
 ### Pseudocode for the overall gameplay:
     Overall steps;
     1.generate a 10x10 grid 
