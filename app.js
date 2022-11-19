@@ -67,21 +67,41 @@ const safeBtn = document.querySelectorAll(".safe")
 
 safeBtn.forEach(cell => {
     cell.addEventListener('click', () => {
+        //setting div text to stored data number
         cell.innerHTML = cell.getAttribute('data')
+        //changing the background when clicked
         cell.style.backgroundImage = "url('https://static.planetminecraft.com/files/resource_media/screenshot/1236/pack_3530346.jpg')";
+        //resizing
         cell.style.backgroundSize = '40px 40px'
     })
 })
 
 const bombBtn = document.querySelectorAll('.bomb')
+const numCount = document.querySelector('p')
+const title = document.querySelector('h1')
 
 bombBtn.forEach(cell => {
     cell.addEventListener('click', () => {
+        //putting a bomb emoji 
         cell.innerHTML = '&#128163'
+        //setting image size
         cell.style.backgroundSize = '40px 40px'
+        //setting image
         cell.style.backgroundImage = "url('https://art.pixilart.com/6708727607ef2f6.png')"
-
-        // window.location.reload();
+        //DOM manipulation to change text when oyu hit a bomb
+        title.innerHTML = "GAME OVER! <br> reset in"
+        //change font color
+        title.style.color = "red"
+        // timer till reset
+        numCount.innerHTML = 5
+        let number = setInterval(() => {
+            if ( numCount.innerHTML <= 5 && numCount.innerHTML > 0){
+                numCount.innerHTML -= 1;
+                if(numCount.innerHTML == 0){
+                    window.location.reload();
+                }
+            }
+        },1000)
     })
 })
 

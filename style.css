@@ -40,3 +40,10 @@ h1{
     color: rgb(82, 80, 80);
     text-align: center;
 }
+
+p{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Minecraft', sans-serif;
+    color: red;
+}
