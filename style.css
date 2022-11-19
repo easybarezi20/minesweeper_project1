@@ -32,9 +32,9 @@ body, html{
     
 }
 .bomb{
-    /* background-image: url('https://www.filterforge.com/filters/11635-v7.jpg'); */
+    background-image: url('https://www.filterforge.com/filters/11635-v7.jpg');
     /* this line for presentation purposes */
-    background-color: red;
+    /* background-color: red; */
 }
 
 h1{
@@ -47,7 +47,7 @@ p{
     text-align: center;
     margin: 10px;
     font-family: 'Minecraft', sans-serif;
-    color: red;
+    color: rgb(82, 80, 80);
 }
 body{
     margin:auto
