@@ -106,11 +106,13 @@ const title = document.querySelector('h1')
 bombBtn.forEach(cell => {
     cell.addEventListener('click', () => {
         let mySound = new Audio('sounds/creeper-explosion.mp3')
-        mySound.play()       
-        //setting image size
-        cell.style.backgroundSize = '40px 40px'
-        //setting image
-        cell.style.backgroundImage = "url('https://art.pixilart.com/88fa84bdf313104.png')"
+        mySound.play()     
+        for (let i = 0; i < bombBtn.length; i++) {
+            //setting image size
+            bombBtn[i].style.backgroundSize = '40px 40px'
+            //setting image
+            bombBtn[i].style.backgroundImage = "url('https://art.pixilart.com/88fa84bdf313104.png')"
+        }
         //DOM manipulation to change text when you hit a bomb
         title.innerHTML = "GAME OVER! <br> reset in"
         //change font color
@@ -128,6 +130,9 @@ bombBtn.forEach(cell => {
         },1000)
     })
 })
+
+
+
 
 
 
