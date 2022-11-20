@@ -84,7 +84,7 @@ safeBtn.forEach(cell => {
             title.innerHTML = "YOU WIN <br> GOOD JOB!"
             
             title.style.color = "red"
-           
+            numCount.style.color = "red"
             numCount.innerHTML = 5
              setInterval(() => {
                 if ( numCount.innerHTML <= 5 && numCount.innerHTML > 0){
