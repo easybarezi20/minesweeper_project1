@@ -7,16 +7,16 @@
 ### Pseudocode for the overall gameplay:
     Overall steps;
     1.generate a 10x10 grid 
-        - automate the rid process 
+        - automate the grid process 
         -figure out how to populate the grid with values 
-            - use an array to populate the board with a for loop
+            - used an array to populate the board with a for loop
     2.figure out how to randomiz the ammount of bombs on the grid 
         - sort() and math.random randomizes an array
     3.figure out how to display the numbers if you choose a safe spot 
         - play around with using the data attribute to display the number of bombs around the square
         - using the data attribute to set how many bombs are around a safe space we can innerHTML the 
             safe space to display the data number
-            -case: if the squere is on the left or rigth edge it will default to checking the row above squre
+            -case: if the squere is on the left or rigth edge it will default to checking the row above squere
                 or the row below squere since my grid has a property of wrap.
     4.if you hit a mine have the game be over 
         -flag feature if you think bomb is on the square
