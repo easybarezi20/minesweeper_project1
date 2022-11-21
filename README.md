@@ -1,6 +1,6 @@
 # Minesweeper_project1 
-    Made a basic game of minesweeper where your objective it to click on 80 spaces that do not contain a bomb. Alos there 
-    are 20 bombs scattered randomly everytime the game refreshes and to help locate bombs the number on the safe spaces indicate if a bomb is around the space. After successfully locating all 80 squares you win the game. 
+    Made a basic game of minesweeper where your objective it to click on 80 spaces that do not contain a bomb. Alos there <br>
+    are 20 bombs scattered randomly everytime the game refreshes and to help locate bombs the number on the safe spaces indicate if a <br> bomb is around the space. After successfully locating all 80 squares you win the game. 
 ## Choice of game:
     MineSweeper
 ### Pseudocode for the overall gameplay:
