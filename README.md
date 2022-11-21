@@ -20,7 +20,7 @@
     4.if you hit a mine have the game be over 
         -flag feature if you think bomb is on the square
     5.win when you uncover all squeres without hitting a mine
-#### Game Link
+
     [Click to Play!](https://easybarezi20.github.io/minesweeper_project1/)
 
 ##### Wireframe of main game screen 
