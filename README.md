@@ -3,6 +3,7 @@
     are 20 bombs scattered randomly everytime the game refreshes and to help locate bombs the number on the safe spaces indicate if a <br> bomb is around the space. After successfully locating all 80 squares you win the game. 
 ## Choice of game:
     MineSweeper
+[Click to Play!](https://easybarezi20.github.io/minesweeper_project1/)
 ### Pseudocode for the overall gameplay:
     Overall steps;
     1.generate a 10x10 grid 
@@ -21,7 +22,6 @@
         -flag feature if you think bomb is on the square
     5.win when you uncover all squeres without hitting a mine
 
-[Click to Play!](https://easybarezi20.github.io/minesweeper_project1/)
 
 ##### Wireframe of main game screen 
     basic design: have a 10x10 grid in the center title ontop and a reset button
